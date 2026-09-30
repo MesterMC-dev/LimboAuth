@@ -26,12 +26,12 @@ import java.util.Locale;
 import java.util.UUID;
 import net.elytrium.limboauth.Settings;
 
-@DatabaseTable(tableName = "AUTH")
+@DatabaseTable(tableName = "users")
 public class RegisteredPlayer {
 
-  public static final String NICKNAME_FIELD = "NICKNAME";
+  public static final String NICKNAME_FIELD = "username";
   public static final String LOWERCASE_NICKNAME_FIELD = "LOWERCASENICKNAME";
-  public static final String HASH_FIELD = "HASH";
+  public static final String HASH_FIELD = "password_hash";
   public static final String IP_FIELD = "IP";
   public static final String LOGIN_IP_FIELD = "LOGINIP";
   public static final String TOTP_TOKEN_FIELD = "TOTPTOKEN";
